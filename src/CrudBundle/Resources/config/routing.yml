@@ -1,3 +1,7 @@
+crud_blog:
+    resource: "@CrudBundle/Resources/config/routing/blog.yml"
+    prefix:   /blog
+
 crud_homepage:
     path:     /hello/{name}
     defaults: { _controller: CrudBundle:Default:index }

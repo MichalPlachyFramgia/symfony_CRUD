@@ -1,0 +1,30 @@
+blog:
+    path:     /
+    defaults: { _controller: "CrudBundle:Blog:index" }
+
+blog_show:
+    path:     /{id}/show
+    defaults: { _controller: "CrudBundle:Blog:show" }
+
+blog_new:
+    path:     /new
+    defaults: { _controller: "CrudBundle:Blog:new" }
+
+blog_create:
+    path:     /create
+    defaults: { _controller: "CrudBundle:Blog:create" }
+    methods:  POST
+
+blog_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CrudBundle:Blog:edit" }
+
+blog_update:
+    path:     /{id}/update
+    defaults: { _controller: "CrudBundle:Blog:update" }
+    methods:  [POST, PUT]
+
+blog_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CrudBundle:Blog:delete" }
+    methods:  [POST, DELETE]
